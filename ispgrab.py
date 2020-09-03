@@ -18,11 +18,11 @@ phone_number = phonenumbers.parse(input('type :'))
 
 if phonenumbers.is_valid_number(phone_number) :
 
-    print('you entered a valid number of',phone_number)
+    print('you entered valid number of',phone_number)
     print('Location :' ,geocoder.description_for_number(phone_number,'en'))
     print('ISP name :' ,carrier.name_for_number(phone_number,'en'))
     #print('zone :' , timezone(phone_number,'en'))
 
 else :
-    print('you entered a invalid number!')
+    print('you entered invalid number!')
     
